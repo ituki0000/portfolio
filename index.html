@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ポートフォリオ | トップ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo"><a href="index.html"><img src="assets/img/puro.png" alt="鈴枝一樹ロゴ" class="logo-img"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="#profile">プロフィール</a></li>
+        <li><a href="#works">作品紹介</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <p>Web エンジニア志望・鈴枝一樹 のポートフォリオサイトへようこそ。</p>
+    </section>
+
+    <section id="profile" class="section">
+      <div class="container">
+        <h2 class="section-title">プロフィール</h2>
+        
+        <!-- プロフィールカード -->
+        <div class="profile-card">
+          <div class="profile-header">
+            <div class="profile-image">
+              <!-- プロフィール画像を追加することを推奨 -->
+              <img src="assets/img/profile.jpg" alt="鈴枝一樹" onerror="this.src='assets/img/itsuki.png'">
+            </div>
+            <div class="profile-info">
+              <h3 class="profile-name">鈴枝一樹</h3>
+              <p class="profile-title">Web エンジニア志望</p>
+            </div>
+          </div>
+          
+          <div class="profile-body">
+            <div class="profile-description">
+              <div class="profile-content-wrapper">
+                <div class="profile-image-side">
+                  <img src="assets/img/IMG_0663.png" alt="自分" class="project-img">
+                </div>
+                <div class="profile-text-side">
+                  <p class="intro">HAL東京で最も力を入れたのは、6人チームで約半年間取り組んだグループ開発です。「未来の自分に手紙を送るサイト」の制作において、サブリーダーとして主にバックエンドを担当し、進捗管理やチームサポートにも積極的に関わりました。</p>
+                  <p class="intro">調整役として全員の作業を円滑に進めた経験から、技術力だけでなく<strong>チームワークの重要性</strong>を学びました。これらの学びを活かし、今後もチームに貢献できるエンジニアを目指します。</p>
+                  
+                  <div class="personal-section">
+                    <h4 class="personal-title"><i class="fas fa-heart"></i> 趣味と興味</h4>
+                    <div class="hobby-items">
+                      <div class="hobby-item">
+                        <h5 class="clickable" data-modal="modal-music"><i class="fas fa-music"></i> 音楽鑑賞（HIPHOP）<i class="fas fa-external-link-alt link-icon"></i></h5>
+                        <p>HIPHOPを中心に音楽を聴くことが好きです。リリックの世界観や、ビートの響きに魅力を感じています。作業中も集中力を高めるためによく聴いています。</p>
+                      </div>
+                      <div class="hobby-item">
+                        <h5 class="clickable" data-modal="modal-travel"><i class="fas fa-plane"></i> 旅行<i class="fas fa-external-link-alt link-icon"></i></h5>
+                        <p>新しい場所を訪れ、その土地ならではの文化や風景を体験することが好きです。旅行を通じて視野を広げ、様々な経験を積むことを大切にしています。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 経歴タイムライン -->
+        <div class="timeline-section">
+          <h3 class="sub-section-title">経歴</h3>
+          <div class="timeline-container">
+            <!-- もっと見るボタン -->
+            <div class="timeline-more">
+              <button id="showMoreTimeline" class="btn-more">
+                <span class="more-text">過去の経歴を見る</span>
+                <span class="less-text" style="display: none;">経歴を閉じる</span>
+                <i class="fas fa-chevron-up more-icon"></i>
+                <i class="fas fa-chevron-down less-icon" style="display: none;"></i>
+              </button>
+            </div>
+
+            <!-- 過去の経歴（クリックで表示） -->
+            <div class="timeline-past" style="display: none;">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2003年 </span>
+                  <p class="timeline-text">蒲田音楽学園 入園</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2009年 3月</span>
+                  <p class="timeline-text">蒲田音楽学園 卒園</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2009 4月</span>
+                  <p class="timeline-text">おなづか小学校 入学</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2015年 3月</span>
+                  <p class="timeline-text">おなづか小学校 卒業</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2015年 4月</span>
+                  <p class="timeline-text">大森第四中学校　入学</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2018年 3月</span>
+                  <p class="timeline-text">大森第四中学校　卒業</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 最近の経歴（常に表示） -->
+            <div class="timeline-recent">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2018年 4月</span>
+                  <p class="timeline-text">八潮高等学校 入学</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2021年 3月</span>
+                  <p class="timeline-text">八潮高等学校 卒業</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2022年 4月</span>
+                  <p class="timeline-text">HAL東京 4年制 高度情報学科 入学</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2026年 3月</span>
+                  <p class="timeline-text">HAL東京 4年制 高度情報学科 卒業見込み</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- スキルセット -->
+        <div class="skills-section">
+          <h3 class="sub-section-title">スキルセット</h3>
+          
+          <div class="skills-grid">
+            <!-- 言語 -->
+            <div class="skill-category-card">
+              <h4 class="category-title">
+                <i class="fas fa-code"></i>
+                言語
+              </h4>
+              <div class="skill-items">
+                <h5 class="sub-category">フロントエンド系</h5>
+                <div class="skill-item">
+                  <span class="skill-name">HTML/CSS</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 80%" data-info="経験年数: 3年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">JavaScript</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 80%" data-info="経験年数: 2.5年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">TypeScript</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 5%" data-info="経験年数: 0.1年"></div>
+                  </div>
+                </div>
+
+                <h5 class="sub-category">バックエンド系</h5>
+                <div class="skill-item">
+                  <span class="skill-name">Python</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 80%" data-info="経験年数: 3年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Java</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 50%" data-info="経験年数: 2年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Kotlin</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 50%" data-info="経験年数: 1.5年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">C#</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 5%" data-info="経験年数: 0.1年"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- フレームワーク -->
+            <div class="skill-category-card">
+              <h4 class="category-title">
+                <i class="fas fa-layer-group"></i>
+                フレームワーク / ライブラリ
+              </h4>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Flask</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 70%" data-info="経験年数: 2年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Tailwind CSS</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 50%" data-info="経験年数: 0.85年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">React</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 25%" data-info="経験年数: 0.5年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Node.js</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 25%" data-info="経験年数: 0.5年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">chakra-ui</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 20%" data-info="経験年数: 0.3年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Unity</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 10%" data-info="経験年数: 0.1年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Next.js</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 5%" data-info="経験年数: 0.1年"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ツール -->
+            <div class="skill-category-card">
+              <h4 class="category-title">
+                <i class="fas fa-database"></i>
+                データベース / ツール
+              </h4>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">MySQL</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 75%" data-info="経験年数: 3年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">phpMyAdmin</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 70%" data-info="経験年数: 3年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">SQLite</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 25%" data-info="経験年数: 1年"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Linux</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" style="width: 10%" data-info="経験年数: 0.3年"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- グラフセクション -->
+        <!-- <div class="charts-section">
+          <h3 class="sub-section-title">技術スタック可視化</h3>
+          <div class="charts-grid">
+            <div class="chart-card">
+              <h4 class="chart-title">言語</h4>
+              <canvas id="chartLang" aria-label="言語経験年数"></canvas>
+            </div>
+            <div class="chart-card">
+              <h4 class="chart-title">フレームワーク / ライブラリ</h4>
+              <canvas id="chartFw" aria-label="フレームワーク経験年数"></canvas>
+            </div>
+            <div class="chart-card">
+              <h4 class="chart-title">データベース / ツール</h4>
+              <canvas id="chartTool" aria-label="ツール経験年数"></canvas>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <h2>作品紹介</h2>
+      <div class="works-grid">
+        <!-- 作品カード1 -->
+        <article class="work-card" data-modal="modal-sample1">
+          <img src="assets/img/ka.png" alt="カフェサイトのスクリーンショット">
+          <h3>カフェサイト</h3>
+          <p class="tech">HTML / CSS / JavaScript</p>
+          <p class="description">カフェの紹介サイト</p>
+          <a href="#" class="work-link">詳細を見る</a>
+        </article>
+
+        <!-- 作品カード2 -->
+        <article class="work-card" data-modal="modal-sample2">
+          <img src="assets/img/home.png" alt="サンプルアプリのスクリーンショット">
+          <h3>銀山温泉</h3>
+          <p class="tech">HTML / CSS / JavaScript</p>
+          <p class="description">銀山温泉サイト</p>
+          <a href="#" class="work-link">詳細を見る</a>
+        </article>
+
+        <!-- 作品カード3 -->
+        <article class="work-card" data-modal="modal-sample3">
+          <img src="assets/img/artest.png" alt="サンプルアプリのスクリーンショット">
+          <h3>アーティストサイト</h3>
+          <p class="tech">HTML / CSS / TypeScript</p>
+          <p class="description">アーティストサイト</p>
+          <a href="#" class="work-link">詳細を見る</a>
+        </article>
+      </div>
+
+      <!-- モーダル1 -->
+      <div id="modal-sample1" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="閉じる">×</button>
+          <div class="modal-header">
+            <h3>カフェサイト</h3>
+            <p class="tech">HTML / CSS / JavaScript</p>
+            <p class="description">カフェ紹介サイトです。</p>
+          </div>
+          <div class="modal-details">
+            <h4>主な機能</h4>
+            
+            <h5>メニューページ機能</h5>
+            <div class="modal-gallery">
+              <img src="assets/img/menu.png" alt="メニューカテゴリー表示" class="modal-img">
+              <img src="assets/img/mwnu2.png" alt="メニューアイテム表示" class="modal-img">
+            </div>
+            <ul>
+              <li>メニューのカテゴリー別表示</li>
+              <li>スムーズスクロール機能</li>
+              <li>メニューアイテムのフェードインアニメーション</li>
+              <li>ナビゲーションの動的ハイライト</li>
+            </ul>
+
+            <h5>コンタクトフォームの機能</h5>
+            <div class="modal-gallery">
+              <img src="assets/img/contac.png" alt="コンタクトフォーム入力画面" class="modal-img">
+              <img src="assets/img/contac2.png" alt="エラーメッセージの表示" class="modal-img">
+            </div>
+            <ul>
+              <li>必須項目チェック</li>
+              <li>メールアドレスの形式チェック</li>
+              <li>エラーメッセージの表示</li>
+            </ul>
+
+            <h5>全体的な機能</h5>
+            <div class="modal-gallery">
+              <img src="assets/img/movairu.png" alt="レスポンシブナビゲーション" class="modal-img">
+              <img src="assets/img/heder.png" alt="ヘッダーパララックス効果" class="modal-img">
+            </div>
+            <ul>
+              <li>レスポンシブナビゲーション</li>
+              <li>ヘッダー画像のパララックス効果</li>
+              <li>スクロール時のナビゲーション固定表示</li>
+              <li>フッターの情報表示</li>
+            </ul>
+
+            <h4>使用技術</h4>
+            <ul class="tech-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript (ES6+)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- モーダル2 -->
+      <div id="modal-sample2" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="閉じる">×</button>
+          <div class="modal-header">
+            <h3>銀山温泉のサイト</h3>
+            <p class="tech">HTML / CSS / JavaScript</p>
+            <p class="description">銀山温泉のサイトです</p>
+          </div>
+          <div class="modal-details">
+            <h4>主な機能</h4>
+            
+            <h5>ナビゲーション機能</h5>
+            <div class="modal-gallery">
+              <img src="assets/img/mein.png" alt="メインセクション表示" class="modal-img">
+              <img src="assets/img/mein2.png" alt="ナビケーションバー表示" class="modal-img">
+            </div>
+            <ul>
+              <li>メインセクションへの簡単なアクセス</li>
+              <li>グローバルナビゲーションによる主要ページへのアクセス</li>
+            </ul>
+
+            <h5>レスポンシブデザイン</h5>
+            <div class="modal-gallery">
+              <img src="assets/img/sumaho.png" alt="スマートフォンで表示" class="modal-img">
+              <img src="assets/img/tabureltuto.png" alt="タブレットで表示" class="modal-img">
+            </div>
+            <ul>
+              <li>スマートフォンでのレスポンシブ対応</li>
+              <li>タブレットでのレスポンシブ対応</li>
+            </ul>
+            
+            <h5>情報提供機能</h5>
+            <div class="modal-gallery">
+              <img src="assets/img/koutu.png" alt="交通アクセス表示" class="modal-img">
+              <img src="assets/img/tizu.png" alt="地図表示" class="modal-img">
+            </div>
+            <ul>
+              <li>3つの主要な交通手段の詳細案内</li>
+              <li>Googleマップの埋め込み機能による正確な位置情報の提供</li>
+            </ul>
+
+            <h4>使用技術</h4>
+            <ul class="tech-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Google Maps API</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- モーダル3 -->
+      <div id="modal-sample3" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="閉じる">×</button>
+          <div class="modal-header">
+            <h3>アーティストサイト</h3>
+            <p class="tech">HTML / CSS / TypeScript</p>
+            <p class="description">アーティストサイトです</p>
+          </div>
+          <div class="modal-details">
+            <h4>主な機能</h4>
+            
+            <h5>タイムラインセクション</h5>
+            <div class="modal-gallery">
+              <img src="assets/img/hanni-puro.png" alt="プロフィール部分" class="modal-img">
+              <img src="assets/img/puronabi.png" alt="タイムラインセクション" class="modal-img">
+            </div>
+            <ul>
+              <li>時系列に沿った整理された情報表示</li>
+              <li>中央線を基準とした左右交互のレイアウト</li>
+              <li>アイコンによる視覚的な区分け</li>
+            </ul>
+
+            <h5>タクソノミーシステム</h5>
+            <div class="modal-gallery">
+              <img src="assets/img/tainomi.png" alt="プロフィール部分" class="modal-img">
+              <img src="assets/img/singuru.png" alt="タイムラインセクション" class="modal-img">
+            </div>
+            <ul>
+              <li>コンテンツの体系的な分類</li>
+              <li>検索性の向上</li>
+              <li>直感的なナビゲーション</li>
+            </ul>
+
+            <h4>使用技術</h4>
+            <ul class="tech-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>お問い合わせ</h2>
+      <p>以下のいずれかの方法でお気軽にご連絡ください。</p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:yourname@example.com">k02y09i03r04@docomo.ne.jp</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/username" target="_blank" rel="noopener">github.com/ituki0000</a></li>
+      </ul>
+      <!-- Google フォームを使った問い合わせフォームを挿入する場合は iframe をここに配置 -->
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2026 鈴枝一樹</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- 音楽趣味モーダル -->
+  <div id="modal-music" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <h3>好きなHIPHOP</h3>
+      <div class="music-gallery">
+        <div class="music-item">
+          <img src="assets/img/hiphop1.jpg" alt="好きなアーティスト1" class="music-img">
+          <p class="music-caption">現場でのLive</p>
+        </div>
+        <div class="music-item">
+          <img src="assets/img/hiphop2.jpg" alt="好きなアーティスト2" class="music-img">
+          <p class="music-caption">DJ目線</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 旅行趣味モーダル -->
+  <div id="modal-travel" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <h3>旅行の思い出</h3>
+      <div class="travel-gallery">
+        <div class="travel-item">
+          <img src="assets/img/iwate.jpg" alt="旅行の思い出1" class="travel-img">
+          <p class="travel-caption">わんこそば</p>
+        </div>
+        <div class="travel-item">
+          <img src="assets/img/iwate2.jpg" alt="旅行の思い出2" class="travel-img">
+          <p class="travel-caption">温泉</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
