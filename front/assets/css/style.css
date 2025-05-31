@@ -760,7 +760,9 @@ footer { text-align: center; padding: 1.2rem 0; background: #fafafa; margin-top:
 .modal-details img {
   width: 100%;
   height: 250px !important;
-  object-fit: cover;
+  object-fit: contain !important;
+  background-color: #f8f9fa;
+  padding: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
   display: block;
@@ -782,32 +784,6 @@ footer { text-align: center; padding: 1.2rem 0; background: #fafafa; margin-top:
   .modal-img,
   .modal-gallery img,
   .modal-details img {
-    height: 200px !important;
-  }
-}
-
-/* 特定の画像に対する上書き */
-.modal-img[alt="レスポンシブナビゲーション"],
-.modal-img[alt*="メニュー"],
-.modal-img[alt*="フォーム"],
-.modal-img[alt*="ナビゲーション"],
-.modal-img[alt*="プロフィール"],
-.modal-img[alt*="タイムライン"],
-.modal-img[alt*="地図"],
-.modal-img[alt*="アクセス"] {
-  height: 250px !important;
-  object-fit: cover !important;
-}
-
-@media (max-width: 768px) {
-  .modal-img[alt="レスポンシブナビゲーション"],
-  .modal-img[alt*="メニュー"],
-  .modal-img[alt*="フォーム"],
-  .modal-img[alt*="ナビゲーション"],
-  .modal-img[alt*="プロフィール"],
-  .modal-img[alt*="タイムライン"],
-  .modal-img[alt*="地図"],
-  .modal-img[alt*="アクセス"] {
     height: 200px !important;
   }
 }
